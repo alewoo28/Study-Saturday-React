@@ -13,6 +13,9 @@ export default class Main extends React.Component {
 
   async componentDidMount(){
     const { data } = await axios.get('/student')
+    // i want you to take the 'data' property out of this object and assign that information to an object also called 'data'
+// the same as const dataObj = { }
+// dataObj = <axios object.data>
     this.setState({students: data})
   }
 
